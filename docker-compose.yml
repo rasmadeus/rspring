@@ -1,0 +1,12 @@
+services:
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    environment:
+      - MYSQL_USER=ruser
+      - MYSQL_PASSWORD=ruser
+      - MYSQL_DATABASE=rdb
+      - MYSQL_ROOT_PASSWORD=ruser
